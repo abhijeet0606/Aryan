@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aryan Sawant | Hospitality Management & Guest Experience Portfolio</title>
+  <meta name="description" content="Curriculum Vitae — Vol. I of Aryan Sawant. Hospitality Management & Guest Experience Professional. PGDM Candidate at IMDR Pune.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090c15;
+      --card-bg: rgba(18, 25, 42, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --accent: #f59e0b; /* Warm luxury hospitality gold */
+      --accent-soft: rgba(245, 158, 11, 0.12);
+      --accent-border: rgba(245, 158, 11, 0.28);
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2.5rem 1rem;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(245, 158, 11, 0.07) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(99, 102, 241, 0.07) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    /* Nav */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--card-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 0.85rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .nav-brand {
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: 0.08em;
+    }
+    .nav-brand span {
+      color: var(--accent);
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.25rem;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+    @media (max-width: 650px) {
+      .nav-links {
+        display: none;
+      }
+    }
+
+    /* Header / Hero */
+    header {
+      background: var(--card-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 2.5rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      padding: 0.35rem 0.9rem;
+      border-radius: 50px;
+      margin-bottom: 1.25rem;
+    }
+    .badge::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    h1 {
+      font-size: 2.7rem;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #ffffff 40%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .serif-title {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: var(--accent);
+      font-weight: 400;
+    }
+    .tagline {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .bio {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 780px;
+      margin-bottom: 1.75rem;
+    }
+    .meta-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+    }
+    .meta-pills span {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--card-border);
+      padding: 0.35rem 0.85rem;
+      border-radius: 8px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      color: var(--text);
+      text-decoration: none;
+      padding: 0.65rem 1.3rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .btn:hover {
+      background: var(--accent);
+      color: #090c15;
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #090c15;
+      border-color: var(--accent);
+    }
+
+    /* Marquee ticker */
+    .ticker {
+      overflow: hidden;
+      white-space: nowrap;
+      background: rgba(245, 158, 11, 0.05);
+      border: 1px solid var(--accent-border);
+      border-radius: 12px;
+      padding: 0.65rem 0;
+      margin-bottom: 2rem;
+    }
+    .ticker-content {
+      display: inline-block;
+      animation: marquee 25s linear infinite;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    @keyframes marquee {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+
+    /* Grid Layout */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    @media (min-width: 800px) {
+      .grid {
+        grid-template-columns: 1.9fr 1.1fr;
+      }
+    }
+    section {
+      background: var(--card-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 2.2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+    }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .section-num {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+    }
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    /* Career Dossier */
+    .exp-item {
+      padding-bottom: 1.75rem;
+      margin-bottom: 1.75rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .exp-item:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+    .exp-role {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .exp-org {
+      font-size: 0.92rem;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+    .styled-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .styled-list li {
+      position: relative;
+      padding-left: 1.25rem;
+      font-size: 0.92rem;
+      color: #cbd5e1;
+    }
+    .styled-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+
+    /* Academic Pedigree */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+    .timeline-item {
+      position: relative;
+      padding-left: 1.25rem;
+      border-left: 2px solid rgba(245, 158, 11, 0.25);
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -6px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .edu-year {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.2rem;
+    }
+    .degree {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .institute {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .edu-meta {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      margin-top: 0.2rem;
+    }
+
+    /* Skills & Chips */
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .chip {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--card-border);
+      padding: 0.4rem 0.8rem;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      color: #e2e8f0;
+    }
+    .chip-accent {
+      background: var(--accent-soft);
+      border-color: var(--accent-border);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .subgroup {
+      margin-bottom: 1.5rem;
+    }
+    .subgroup-title {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 0.6rem;
+    }
+
+    /* Highlights 3-card banner */
+    .highlights-banner {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .highlight-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.2rem;
+      text-align: center;
+    }
+    .highlight-card strong {
+      display: block;
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    .highlight-card span {
+      font-size: 0.82rem;
+      color: var(--accent);
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2.5rem 0 1rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body id="top">
+  <div class="container">
+    <!-- Navbar -->
+    <nav>
+      <a href="#top" class="nav-brand">AS<span>·MMXXVI</span></a>
+      <div class="nav-links">
+        <a href="#manifesto">01/Manifesto</a>
+        <a href="#experience">02/Experience</a>
+        <a href="#pedigree">03/Pedigree</a>
+        <a href="#skills">04/Skills</a>
+        <a href="#contact">05/Contact</a>
+      </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header>
+      <div class="badge">Open to Opportunities — 2026 · Curriculum Vitae — Vol. I</div>
+      <h1>Aryan Sawant</h1>
+      <p class="tagline">Hospitality Management &amp; Guest Experience</p>
+      
+      <p class="bio">
+        Bridging five-star guest operations with modern, data-informed management. Passionate about creating seamless guest excellence, driving customer-focused solutions, and contributing to strategic business growth.
+      </p>
+
+      <div class="meta-pills">
+        <span>📍 Pune · Goa · Sawantwadi, India</span>
+        <span>🏨 Former Hospitality Intern — JW Marriott, Pune</span>
+        <span>🎓 PGDM (2026–28) — IMDR, Pune</span>
+        <span>📊 Certified: GA4 &amp; HubSpot Inbound</span>
+      </div>
+
+      <div class="actions">
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn">Connect on LinkedIn</a>
+      </div>
+
+      <div class="highlights-banner">
+        <div class="highlight-card">
+          <strong>JW Marriott</strong>
+          <span>Luxury Operations · Pune</span>
+        </div>
+        <div class="highlight-card">
+          <strong>PGDM</strong>
+          <span>IMDR Pune · 2026–28</span>
+        </div>
+        <div class="highlight-card">
+          <strong>GA4 + HubSpot</strong>
+          <span>Certified Marketer</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Ticker / Marquee -->
+    <div class="ticker">
+      <div class="ticker-content">
+        Guest Excellence — Strategic Operations — Revenue Acumen — Bespoke Protocols — Analytics Driven — HubSpot Inbound — Google Analytics — F&amp;B Operations — Guest Excellence — Strategic Operations — Revenue Acumen — Bespoke Protocols — Analytics Driven — HubSpot Inbound — Google Analytics — F&amp;B Operations —
+      </div>
+    </div>
+
+    <div class="grid">
+      <main>
+        <!-- Manifesto -->
+        <section id="manifesto">
+          <div class="section-header">
+            <span class="section-num">01</span>
+            <h2 class="section-title">The Manifesto</h2>
+          </div>
+          <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 1rem;">
+            Curious and adaptable individual with a strong willingness to learn, grow, and take on new challenges. I enjoy exploring ideas, connecting with people, and continuously improving my skills to create meaningful results.
+          </p>
+          <p style="color: #cbd5e1; font-size: 0.95rem;">
+            My ambition is to build a career where I can combine my luxury hospitality background with modern management knowledge to drive customer-focused solutions, effective decision-making, and sustainable business growth.
+          </p>
+        </section>
+
+        <!-- Career Dossier -->
+        <section id="experience">
+          <div class="section-header">
+            <span class="section-num">02</span>
+            <h2 class="section-title">Career Dossier</h2>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-role">Hospitality Intern — Industrial Internship</div>
+            <div class="exp-org">JW Marriott, Pune · Luxury Operations</div>
+            <ul class="styled-list">
+              <li>Worked in a luxury hospitality environment adhering to international brand standards and standard operating procedures (SOPs).</li>
+              <li>Gained hands-on exposure to five-star guest handling, service operations, and cross-departmental team coordination.</li>
+              <li>Developed professional communication, discipline, and a rigorous customer-focused approach to service delivery.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Academic Pedigree -->
+        <section id="pedigree">
+          <div class="section-header">
+            <span class="section-num">03</span>
+            <h2 class="section-title">Academic Pedigree</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="edu-year">2026 – 2028</div>
+              <div class="degree">PGDM — Post Graduate Diploma in Management</div>
+              <div class="institute">Institute of Management Development &amp; Research (IMDR®), Pune</div>
+              <div class="edu-meta">AICTE approved, NBA accredited · Pursuing</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="edu-year">2023 – 2026</div>
+              <div class="degree">Graduation — Hospitality &amp; Hotel Administration</div>
+              <div class="institute">Institute of Hotel Management, Catering Technology &amp; Applied Nutrition (IHM), Goa</div>
+              <div class="edu-meta">CGPA: 5.24</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="edu-year">2023</div>
+              <div class="degree">H.S.C — Higher Secondary Certificate</div>
+              <div class="institute">Satvashiladevi Bhonsle Jr College, Sawantwadi</div>
+              <div class="edu-meta">Score: 58%</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="edu-year">2021</div>
+              <div class="degree">S.S.C — Secondary School Certificate</div>
+              <div class="institute">Milagris High School, Sawantwadi</div>
+              <div class="edu-meta">Score: 67%</div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside>
+        <!-- Skills & Credentials -->
+        <section id="skills">
+          <div class="section-header">
+            <span class="section-num">04</span>
+            <h2 class="section-title">Skills &amp; Credentials</h2>
+          </div>
+
+          <div class="subgroup">
+            <div class="subgroup-title">Certifications</div>
+            <div class="chips">
+              <span class="chip chip-accent">Google Analytics Certification</span>
+              <span class="chip chip-accent">HubSpot Inbound Marketing</span>
+            </div>
+          </div>
+
+          <div class="subgroup">
+            <div class="subgroup-title">Competencies</div>
+            <div class="chips">
+              <span class="chip">Customer Orientation</span>
+              <span class="chip">Service Operations</span>
+              <span class="chip">Time Management</span>
+              <span class="chip">Problem-solving</span>
+              <span class="chip">Team Collaboration</span>
+              <span class="chip">Proficient in MS Tools</span>
+            </div>
+          </div>
+
+          <div class="subgroup">
+            <div class="subgroup-title">Languages</div>
+            <div class="chips">
+              <span class="chip">English</span>
+              <span class="chip">Hindi</span>
+              <span class="chip">Marathi</span>
+            </div>
+          </div>
+
+          <div class="subgroup" style="margin-bottom: 0;">
+            <div class="subgroup-title">Interests &amp; Pursuits</div>
+            <p style="font-size: 0.9rem; color: #cbd5e1; line-height: 1.6;">
+              Sports &amp; Fitness · Event Planning &amp; Coordination · Exploring New Cultures &amp; Cuisines
+            </p>
+          </div>
+        </section>
+
+        <!-- The Correspondence / Contact -->
+        <section id="contact">
+          <div class="section-header">
+            <span class="section-num">05</span>
+            <h2 class="section-title">The Correspondence</h2>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            Let’s craft memorable stays and impactful guest solutions together.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="justify-content: center;">
+              Connect on LinkedIn
+            </a>
+            <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: 0.5rem;">
+              📍 Pune · Goa · Sawantwadi, India
+            </p>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div>© MMXXVI — Aryan Sawant · Pune · Goa · Sawantwadi, India</div>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </div>
+</body>
+</html>
